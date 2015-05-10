@@ -1,0 +1,15 @@
+body {
+  margin-left: 10px;
+}
+
+.form-control {
+  min-width: 0;
+  width: 200px;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+#output {
+ width: 500px;
+}
