@@ -16,7 +16,7 @@ Getting Started
 
 3. Start the web server
     ```javascript
-       $node app.js
+    $node app.js
     ```
     
 4. The default port is set to 3000, so your application will show up on localhost:3000.
