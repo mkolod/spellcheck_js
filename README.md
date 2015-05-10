@@ -1,7 +1,7 @@
 Spellcheck.js
 ======
 
-This is a JS port of [Peter Norvig's spell checker](http://norvig.com/spell-correct.html), originally written in Python.
+This is a JS port of [Peter Norvig's spell checker](http://norvig.com/spell-correct.html), originally written in Python. My goal was to make it purely functional - you won't see any loops or other iterative constructs here.
 
 
 Getting Started
