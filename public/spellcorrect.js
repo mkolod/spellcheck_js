@@ -24,9 +24,15 @@ function edits1(word) {
 
 function edits2(word) { return _.flatten(_.map(edits1(word), function(x) { return edits1(x); })) }
 
-function correct(word) {
+function correct_word(word) {
   var startTime = Date.now();
   var recognized = _.find([_.identity, edits1, edits2], function(x) { return !_.isEmpty(_.partial(known, word)(x)) });
   console.log('Spelling correction took ' + (Date.now() - startTime) + " ms")
   return (recognized === undefined ? [word] : known(word, recognized))[0];
+}
+
+function correct(text) {
+  split_txt = text.split(" ");
+  corrected_txt = _.map(split_txt, function(x) { return correct_word(x); });
+  return corrected_txt.join(" ");
 }
